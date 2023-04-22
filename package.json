@@ -1,0 +1,27 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node build/index.js",
+    "start:dev": "ts-node -r tsconfig-paths/register --transpile-only ./src/index.ts",
+    "clear": "npm run clear:build && rimraf node_modules",
+    "clear:build": "rimraf build",
+    "build": "npm run clear:build && npm run tsc",
+    "tsc": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.5",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4"
+  }
+}
