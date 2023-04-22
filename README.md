@@ -7,7 +7,7 @@ A boilerplate for TypeScript and Node.js projects.
 To get started with this project, first clone the repository:
 
 ```
-git clone https://github.com/shakizwastaken/typescript-starter.git
+git clone https://github.com/shakizwastaken/node-typescript-starter.git
 ```
 
 Then, navigate into the project directory and install the dependencies:
