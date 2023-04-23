@@ -6,7 +6,7 @@ const envVarsSchema = joi
   .object({
     NODE_ENV: joi
       .string()
-      .allow(["development", "production", "test", "provision"])
+      .allow("development", "production")
       .default("development")
       .optional(),
   })
