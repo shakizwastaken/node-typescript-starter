@@ -1,5 +1,6 @@
 //validates .env file
-import { config, env } from "@env";
+import config from "@env/config";
+import env from "@env";
 config();
 
 const { NODE_ENV } = env; // validated and typesafe env vars
